@@ -135,7 +135,8 @@ players = {
 
 print(players) #output: {'Lionel Messi': 10, 'Cristiano Ronaldo': 7}
 
-'''if statements
+'''IF STATEMENTS
+
     if condition:
 
     if condition:
@@ -154,14 +155,14 @@ print(players) #output: {'Lionel Messi': 10, 'Cristiano Ronaldo': 7}
         else:
 '''
 
-'''Operators
+'''OPERATIONS
     in/not in
     if 'chick' in string:
     if 'chick' not in string:
     
     if id(string) is string:
     
-    string = 'chicken' if string != chicken else string
+    string = 'chicken' if string != 'chicken' else string
 '''
 
 import random
