@@ -163,3 +163,9 @@ print(players) #output: {'Lionel Messi': 10, 'Cristiano Ronaldo': 7}
     
     string = 'chicken' if string != chicken else string
 '''
+
+import random
+random.random() #Random float-point from 0(inclusive)-1(exclusive)
+random.randrange() #min(inclusive), max(exclusive)
+random.randint() #min(inclusive), max(inclusive)
+random.seed() #Used to help with creating randomness (int)
