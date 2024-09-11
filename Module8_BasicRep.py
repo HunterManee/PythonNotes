@@ -72,3 +72,4 @@ max(array): Get the max element in array
 min(array): Get the min element in array
 sum(array): Get the sum of all elements in the array 
 '''
+

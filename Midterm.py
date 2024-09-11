@@ -68,11 +68,11 @@ print(f'{"Gabriel Jesus":16}{"7":8}')
 '''
 
 #Left-aligned
-print(f'{"Player Name":<16}{"Goals":<8}') #Player Name     Goals
+print(f'{"Player Name":<16}{"Goals":<8}') #output: 'Player Name     Goals  '
 #Right-aligned
-print(f'{"Player Name":>16}{"Goals":>8}') #     Player Name   Goals
+print(f'{"Player Name":>16}{"Goals":>8}') #output: '    Player Name   Goals'
 #Centered
-print(f'{"Player Name":^16}{"Goals":^8}') #  Player Name    Goals 
+print(f'{"Player Name":^16}{"Goals":^8}') #output: '  Player Name    Goals '
 
 #Fill Character
 score = 9
