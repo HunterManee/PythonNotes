@@ -36,8 +36,8 @@ print(f'{integer:,.2f}') #output: 5,000.00
 #Module: Represented by % Takes the remainder of division result
 
 #import personal scripts
-import test
-print(test.testString) #output: Hello World
+import AnotherScript
+print(AnotherScript.testString) #output: Hello World
 
 # Executes only if file run as a script (e.g., main main.py)
 #if __name__ == '__main__':
