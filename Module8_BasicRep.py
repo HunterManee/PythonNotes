@@ -70,6 +70,44 @@ all(array): True if every element in list is True(!=0), or if the list is empty.
 any(array): True if any element in the array is True(!=0)
 max(array): Get the max element in array
 min(array): Get the min element in array
-sum(array): Get the sum of all elements in the array 
-'''
+sum(array): Get the sum of all elements in the array
 
+array.sort(): Sorts the array in accending order (by default)
+'''
+###### 8.7 ############## Iterating Over a Dictionary #######################
+'''
+Hash: is a transformation of the key into a unique value that alloqs the
+    interpreter to perform fast lookup
+
+View Object: provides read- only acecess to dictionary keys and values
+
+dict.items() -returns a view object that yields (key, value) typles
+dict.keys() -returns a view object that yields dictionary keys
+dict.values() - retruns a view object that yields dictionary values
+'''
+###### 8.8 ############## Counting Using the Range() Function ###############
+'''
+range(Y): range(3) creates the sequence 0, 1, 2.
+
+range(X, Y): range(-7, -3) creates the sequence -7, -6, -5, -4.
+
+range(X, Y, Z): range(0, 50, 10) creates the sequence 0, 10, 20, 30, 40.
+range(X, Y, Z): range(6, -1, -2) creates the sequence 6, 4, 2, 0.
+'''
+###### 8.9 ############## While vs. For Loops ###############################
+'''
+As a general rule:
+
+    1) Use a for loop when the number of iterations is computable before 
+        entering the loop, as when counting down from X to 0, printing a 
+        string N times, etc.
+        
+    2) Use a for loop when accessing the elements of a container, as 
+        when adding 1 to every element in a list, or printing the key 
+        of every entry in a dict, etc.
+        
+    3) Use a while loop when the number of iterations is not 
+        computable before entering the loop, as when iterating until 
+        a user enters a particular character.
+
+'''

@@ -49,11 +49,11 @@ print(string + string) #output: chickenschickens
 print(chr(69)) #output: E
 print(ord(string[0])) #output: 99
 
-array = ['Hello', 'World']
-print(len(array))    #output: 2
-print(array[0])      #output: Hello
-print(array[-1])     #output: World
-print(array + array) #output: ['Hello', 'World', 'Hello', 'World']
+list = ['Hello', 'World']
+print(len(list))    #output: 2
+print(list[0])      #output: Hello
+print(list[-1])     #output: World
+print(list + list) #output: ['Hello', 'World', 'Hello', 'World']
 
 #field width
 print(f'{"Player Name":16}{"Goals":8}')
@@ -91,26 +91,28 @@ print(f'{5:4.1f}')     #output: ' 5.0'
 
 '''Slice Notation
     string[start:end] #start(inclusive):end(exclusive)
-    array[start:end] #start(inclusive):end(exclusive)
+    list[start:end] #start(inclusive):end(exclusive)
 
     print(string[:5]) #output: chick
-    print(array[:1])  #output: Hello
+    print(list[:1])  #output: Hello
 
     print(string[::2]) #output: cikn
 '''
-'''Arrays
+'''List
     index = 0
-    array.append('!') #['Hello', 'World', '!']
-    array.pop(index)  #['World' '!']
-    array.remove('!') #['World']
+    list.append('!') #['Hello', 'World', '!']
+    list.pop(index)  #['World' '!']
+    list.remove('!') #['World']
 
-    len(array)       #gets length of array
-    array + array    #concatenates two arrays
-    min(array)       #min value of array
-    max(array)       #max value of array
-    sum(array)       #sum of all value in array
-    array.index(val) #Find the index of the first element in the list whose value matches val
-    array.count(val) #Count the number of occurrences of the value val in the array
+    len(list)       #gets length of list
+    list + list    #concatenates two list
+    min(list)       #min value of list
+    max(list)       #max value of list
+    sum(list)       #sum of all value in list
+    list.index(val) #Find the index of the first element in the list whose value matches val
+    list.count(val) #Count the number of occurrences of the value val in the list
+
+    list.sort()     #Sorts the elements in accending order (by default)
 '''
 
 #Tuple: (1, 2, 3)
@@ -170,3 +172,4 @@ random.random() #Random float-point from 0(inclusive)-1(exclusive)
 random.randrange() #min(inclusive), max(exclusive)
 random.randint() #min(inclusive), max(inclusive)
 random.seed() #Used to help with creating randomness (int)
+
