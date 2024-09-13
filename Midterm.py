@@ -112,6 +112,7 @@ print(f'{5:4.1f}')     #output: ' 5.0'
     list.index(val) #Find the index of the first element in the list whose value matches val
     list.count(val) #Count the number of occurrences of the value val in the list
 
+****************************************************************************
     list.sort()     #Sorts the elements in accending order (by default)
 '''
 

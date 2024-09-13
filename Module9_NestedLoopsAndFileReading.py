@@ -125,6 +125,4 @@ f.write('Hello,\n\nThis is example of content in a text file')
 # Force output buffer to be written to disk
 f.flush()
 os.fsync(f.fileno())
-
-
-
+###### 9.7 ############## Handling Exceptions Using Try and Except ##########
