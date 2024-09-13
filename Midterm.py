@@ -39,7 +39,7 @@ print(f'{integer:,.2f}') #output: 5,000.00
 import AnotherScript
 print(AnotherScript.testString) #output: Hello World
 
-# Executes only if file run as a script (e.g., main main.py)
+# Executes only if file run as a script (e.g., Midterm Midterm.py)
 #if __name__ == '__main__':
 
 print(len(string)) #output: 8
@@ -76,11 +76,11 @@ print(f'{"Player Name":^16}{"Goals":^8}') #output: '  Player Name    Goals '
 
 #Fill Character
 score = 9
-print(f'{score:}')    #output: '9'
-print(f'{score:3}')   #output: '  9'
-print(f'{score:0>3}') #output: '009'
-print(f'{score:0<3}') #output: '900'
-print(f'{score:0^3}') #output: '090'
+print(f'{score:}')     #output: '9'
+print(f'{score:3}')    #output: '  9'
+print(f'{score:0>3}')  #output: '009'
+print(f'{score:0<3}')  #output: '900'
+print(f'{score:0^3}')  #output: '090'
 
 #Percision
 print(f'{5:.1f}')      #output: '5.0'
@@ -91,10 +91,10 @@ print(f'{5:4.1f}')     #output: ' 5.0'
 
 '''Slice Notation
     string[start:end] #start(inclusive):end(exclusive)
-    list[start:end] #start(inclusive):end(exclusive)
+    list[start:end]   #start(inclusive):end(exclusive)
 
     print(string[:5]) #output: chick
-    print(list[:1])  #output: Hello
+    print(list[:1])   #output: Hello
 
     print(string[::2]) #output: cikn
 '''
@@ -104,13 +104,13 @@ print(f'{5:4.1f}')     #output: ' 5.0'
     list.pop(index)  #['World' '!']
     list.remove('!') #['World']
 
-    len(list)       #gets length of list
-    list + list    #concatenates two list
-    min(list)       #min value of list
-    max(list)       #max value of list
-    sum(list)       #sum of all value in list
-    list.index(val) #Find the index of the first element in the list whose value matches val
-    list.count(val) #Count the number of occurrences of the value val in the list
+    len(list)        #gets length of list
+    list + list      #concatenates two list
+    min(list)        #min value of list
+    max(list)        #max value of list
+    sum(list)        #sum of all value in list
+    list.index(val)  #Find the index of the first element in the list whose value matches val
+    list.count(val)  #Count the number of occurrences of the value val in the list
 
 ****************************************************************************
     list.sort()     #Sorts the elements in accending order (by default)
