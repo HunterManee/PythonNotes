@@ -42,6 +42,12 @@ print(AnotherScript.testString) #output: Hello World
 # Executes only if file run as a script (e.g., Midterm Midterm.py)
 #if __name__ == '__main__':
 
+import random
+random.random() #Random float-point from 0(inclusive)-1(exclusive)
+random.randrange(integer, integer + 1) #min(inclusive), max(exclusive)
+random.randint(integer, integer + 1) #min(inclusive), max(inclusive)
+random.seed(integer) #Used to help with creating randomness (int)
+
 print(len(string)) #output: 8
 print(string[0]) #output: c
 print(string[-1]) #output: s
@@ -53,7 +59,7 @@ list = ['Hello', 'World']
 print(len(list))    #output: 2
 print(list[0])      #output: Hello
 print(list[-1])     #output: World
-print(list + list) #output: ['Hello', 'World', 'Hello', 'World']
+print(list + list)  #output: ['Hello', 'World', 'Hello', 'World']
 
 #field width
 print(f'{"Player Name":16}{"Goals":8}')
@@ -90,11 +96,11 @@ print(f'{5.2589:.3f}') #output: '5.259'
 print(f'{5:4.1f}')     #output: ' 5.0'
 
 '''Slice Notation
-    string[start:end] #start(inclusive):end(exclusive)
-    list[start:end]   #start(inclusive):end(exclusive)
+    string[start:end]  #start(inclusive):end(exclusive)
+    list[start:end]    #start(inclusive):end(exclusive)
 
-    print(string[:5]) #output: chick
-    print(list[:1])   #output: Hello
+    print(string[:5])  #output: chick
+    print(list[:1])    #output: Hello
 
     print(string[::2]) #output: cikn
 '''
@@ -140,22 +146,26 @@ print(players) #output: {'Lionel Messi': 10, 'Cristiano Ronaldo': 7}
 
 '''IF STATEMENTS
 
-    if condition:
+    if CONDITION:
 
-    if condition:
+    if CONDITION:
     else:
     
-    if condition:
-    elif condition:
+    if CONDITION:
+    elif CONDITION:
     else:
-    
+
+    if CONDITION:
+        if CONDITION:
+        else:
+
+    CONDITION:
+    () 
+
     ==, !=
     <=, <, >, >=
-    and, or, not
 
-    if condition:
-        if condition:
-        else:
+    and, or, not
 '''
 
 '''OPERATIONS
@@ -167,10 +177,4 @@ print(players) #output: {'Lionel Messi': 10, 'Cristiano Ronaldo': 7}
     
     string = 'chicken' if string != 'chicken' else string
 '''
-
-import random
-random.random() #Random float-point from 0(inclusive)-1(exclusive)
-random.randrange() #min(inclusive), max(exclusive)
-random.randint() #min(inclusive), max(inclusive)
-random.seed() #Used to help with creating randomness (int)
 
