@@ -116,13 +116,33 @@ file.flush(): method can be called to tforce the interpreter to flush the
     operating systems. Closing an open file also flushes the output buffer.
 **************************************************************************** 
 '''
-
 import os
-# Open a file with default line-buffering.
-f = open('myFile.txt', 'w')
-# No newline character, so not written to disk immediately
-f.write('Hello,\n\nThis is example of content in a text file')
-# Force output buffer to be written to disk
-f.flush()
-os.fsync(f.fileno())
+
+myFile = open('myFile.txt', 'w')
+
+myFile.write('Hello,\n\nThis is example of content in a text file')
+
+myFile.flush()
+#os.fsync(f.fileno())
+
+myFile.close()
 ###### 9.7 ############## Handling Exceptions Using Try and Except ##########
+'''
+Error-Checking Code: Code that a programmer introduces to detect and 
+    handle errors that occur while the program executes.
+
+Exception-Handling: Handles exceptional circumstances, or errors, during 
+    execution
+'''
+try:
+    x = 1 / 0
+except:
+    print("Can't divide by 0")
+
+'''
+EOFError:	input() hits an end-of-file condition (EOF) without reading any input.
+KeyError:	A dictionary key is not found in the set of keys.
+ZeroDivisionError:	Divide by zero error
+ValueError:	Invalid value (Ex: Input mismatch)
+IndexError:	Index is out of bounds.
+'''
