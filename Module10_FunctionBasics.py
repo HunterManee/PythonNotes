@@ -130,11 +130,10 @@ random added to importer's namespace
 '''
 Side note when creating your own scripts to be imported use dot notation
     to interacte with variables and functions inside of imported script
-
-import made_up_script
-made_up_script.variable
-made_up_script.function()
 '''
+import AnotherScript
+AnotherScript.testString
+AnotherScript.testFunction()
 
 ###### 10.10 ############## Importing Specific Names from a Module ##########
 
@@ -146,10 +145,12 @@ import hashlib
 
 '''
 Can import particular parts of a module
-from made_up_script import variable
-from made_up_script import function
-from made_up_script import variable, function
 '''
+from AnotherScript import testString
+from AnotherScript import testFunction
+from AnotherScript import testString, testFunction
+testString
+testFunction()
 
 '''
 __name__: is a global string variable automatically added to every module 
